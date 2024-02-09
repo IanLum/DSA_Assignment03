@@ -35,6 +35,18 @@ class MinHeapTest {
         heap.insert(data="tester", heapNumber=0.2)
         heap.adjustHeapNumber("booh", 0.0)
         assertEquals(heap.getMin(), "booh")
+
+    }
+
+    @Test
+    fun testInfiniteValues() {
+        val heap = MinHeap<String>()
+        heap.insert("test", 2.0)
+        heap.insert("q", Double.POSITIVE_INFINITY)
+        assertEquals(heap.getMin(), "test")
+        heap.adjustHeapNumber("q", 4.0)
+        heap.insert("w", 10.0)
+        assertEquals(heap.getMin(), "q")
     }
 
     @Test
