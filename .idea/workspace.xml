@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8389e26-ebab-45ba-9177-2a45d5e72f57" name="Changes" comment="Heap reference implementation is ready">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/MinHeap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/MinHeap.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/MinHeapTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/MinHeapTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/WeightedDirectedGraph.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/WeightedDirectedGraph.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +203,6 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-11.0.21-corretto-11.0.21-3183f394aec4-26afc3bf" />
         <option value="jdk-21.0.2-openjdk-21.0.2-f644763e9732-c0c073db" />
       </set>
     </attachedChunks>
@@ -223,6 +220,7 @@
       <workItem from="1707340778658" duration="598000" />
       <workItem from="1707409487935" duration="674000" />
       <workItem from="1707502270539" duration="1010000" />
+      <workItem from="1707628564474" duration="1516000" />
     </task>
     <task id="LOCAL-00001" summary="Added heap implementation.">
       <option name="closed" value="true" />
@@ -253,6 +251,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added heap implementation." />
