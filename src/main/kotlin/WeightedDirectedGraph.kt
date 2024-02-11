@@ -77,4 +77,14 @@ class WeightedDirectedGraph<VertexType> : Graph<VertexType> {
             tracePath(mutableListOf(dest), prev)
 
     }
+
+    fun dijkstraCost(start: VertexType, dest: VertexType): Double? {
+        dijkstra(start, dest)?.let { path ->
+            var cost = 0.0
+            for ((idx, v) in path.dropLast(1).withIndex()) {
+                cost += getEdges(v)[path[idx + 1]]!!
+            }
+            return cost
+        } ?: return null
+    }
 }
