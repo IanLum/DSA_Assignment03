@@ -33,6 +33,18 @@ class WeightedDirectedGraph<VertexType> : Graph<VertexType> {
         return true
     }
 
+    /**
+     * Helper function for [dijkstra], traces the path back to the start
+     * from the destination to find the shortest path. Runs recursively,
+     * adding the previous vertex to [path], until the previous vertex
+     * is [null], which indicates the start has been reached.
+     *
+     * @param path The path to the destination, adds elements backwards
+     * starting with the destination
+     * @param prev The map of vertices to the previous vertex, determined
+     * by [dijkstra]
+     * @return The path from the start to the destination
+     */
     private fun tracePath(
         path: MutableList<VertexType>,
         prev: MutableMap<VertexType, VertexType?>
@@ -45,6 +57,16 @@ class WeightedDirectedGraph<VertexType> : Graph<VertexType> {
         }
         return path
     }
+
+    /**
+     * Applies Dijkstra's algorithm, finding the shortest path from [start]
+     * to [dest].
+     *
+     * @param start The start vertex
+     * @param dest The destination vertex
+     * @return The shortest path from [start] to [dest], or [null] if
+     * no path exists
+     */
     fun dijkstra(start: VertexType, dest: VertexType): List<VertexType>? {
         if (start == dest) return mutableListOf(dest)
 
@@ -75,9 +97,17 @@ class WeightedDirectedGraph<VertexType> : Graph<VertexType> {
             null
         else
             tracePath(mutableListOf(dest), prev)
-
     }
 
+    /**
+     * Applies Dijkstra's algorithm, finding the cost shortest path from
+     * [start] to [dest].
+     *
+     * @param start The start vertex
+     * @param dest The destination vertex
+     * @return The cost of the shortest path from [start] to [dest],
+     * or [null] if no path exists
+     */
     fun dijkstraCost(start: VertexType, dest: VertexType): Double? {
         dijkstra(start, dest)?.let { path ->
             var cost = 0.0
