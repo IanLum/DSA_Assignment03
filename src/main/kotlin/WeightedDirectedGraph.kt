@@ -46,6 +46,8 @@ class WeightedDirectedGraph<VertexType> : Graph<VertexType> {
         return path
     }
     fun dijkstra(start: VertexType, dest: VertexType): List<VertexType>? {
+        if (start == dest) return mutableListOf(dest)
+
         val prev = mutableMapOf<VertexType, VertexType?>()
         val dist = mutableMapOf<VertexType, Double>()
         val queue = PriorityQueue<VertexType>()
