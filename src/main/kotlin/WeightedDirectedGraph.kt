@@ -2,7 +2,7 @@ package org.example
 
 class WeightedDirectedGraph<VertexType> : Graph<VertexType> {
     private var vertices: MutableSet<VertexType> = mutableSetOf()
-    private var edges: MutableMap<VertexType, MutableSet<Pair<VertexType, Double>>> = mutableMapOf()
+    private var edges: MutableMap<VertexType, MutableMap<VertexType, Double>> = mutableMapOf()
 
     override fun getVertices(): Set<VertexType> {
         TODO("Not yet implemented")
@@ -21,10 +21,9 @@ class WeightedDirectedGraph<VertexType> : Graph<VertexType> {
             return
         }
         edges[from]?.also { currentAdjacent ->
-            // this technically makes this a directed multigraph
-            currentAdjacent.add(Pair(to, cost))
+            currentAdjacent[to] = cost
         } ?: run {
-            edges[from] = mutableSetOf(Pair(to, cost))
+            edges[from] = mutableMapOf(to to cost)
         }
     }
 
