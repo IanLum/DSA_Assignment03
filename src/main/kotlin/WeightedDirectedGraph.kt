@@ -4,17 +4,15 @@ class WeightedDirectedGraph<VertexType> : Graph<VertexType> {
     private var vertices: MutableSet<VertexType> = mutableSetOf()
     private var edges: MutableMap<VertexType, MutableMap<VertexType, Double>> = mutableMapOf()
 
-    override fun getVertices(): Set<VertexType> {
-        TODO("Not yet implemented")
-    }
+    override fun getVertices(): Set<VertexType> = vertices
 
     override fun clear() {
-        TODO("Not yet implemented")
+        vertices = mutableSetOf()
+        edges = mutableMapOf()
     }
 
-    override fun getEdges(from: VertexType): Map<VertexType, Double> {
-        TODO("Not yet implemented")
-    }
+    override fun getEdges(from: VertexType): Map<VertexType, Double> =
+        edges[from] ?: mutableMapOf()
 
     override fun addEdge(from: VertexType, to: VertexType, cost: Double) {
         if (!vertices.contains(from) || !vertices.contains(to)) {
