@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8389e26-ebab-45ba-9177-2a45d5e72f57" name="Changes" comment="Heap reference implementation is ready">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/PriorityQueue.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/PriorityQueueTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/WeightedDirectedGraph.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/WeightedDirectedGraph.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +77,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PriorityQueueTest">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="MinHeapTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -184,8 +183,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PriorityQueueTest" />
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.PriorityQueueTest" />
         <item itemvalue="Gradle.WeightedDirectedGraphTest" />
         <item itemvalue="Gradle.MinHeapTest" />
         <item itemvalue="Gradle.MinHeapTest.testInfiniteValues" />
@@ -212,7 +211,7 @@
       <workItem from="1707340778658" duration="598000" />
       <workItem from="1707409487935" duration="674000" />
       <workItem from="1707502270539" duration="1010000" />
-      <workItem from="1707628564474" duration="5435000" />
+      <workItem from="1707628564474" duration="11757000" />
     </task>
     <task id="LOCAL-00001" summary="Added heap implementation.">
       <option name="closed" value="true" />

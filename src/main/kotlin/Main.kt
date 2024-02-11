@@ -1,5 +1,25 @@
 package org.example
 
 fun main() {
-    println("Hello World!")
+    val g = WeightedDirectedGraph<Int>()
+    g.addVertex(1)
+    g.addVertex(2)
+    g.addVertex(3)
+    g.addVertex(4)
+    g.addVertex(5)
+    g.addVertex(6)
+    g.addVertex(7)
+    g.addVertex(8)
+    g.addVertex(9)
+    g.addEdge(1,2, 1.0)
+    g.addEdge(2,4, 7.0)
+    g.addEdge(1,3, 3.0)
+    g.addEdge(3,4, 3.0)
+    g.addEdge(4,5, 1.0)
+    g.addEdge(5,7, 7.0)
+    g.addEdge(4,6, 3.0)
+    g.addEdge(6,7, 3.0)
+    g.addEdge(8,9, 1.0)
+    val p = g.dijkstra(1, 7)
+    println("$p")
 }
